@@ -8,7 +8,8 @@ import Aesthetoics from "../assets/Aesthetics-webp.webp";
 import Aesthetics_Icon from "../assets/Aesthetics-icon-webp.webp";
 import leftLine from "../assets/servicesImg/leftLine.svg";
 import Line from '../assets/servicesImg/line.svg';
-import More from "../assets/servicesImg/more.svg"
+import More from "../assets/servicesImg/more.svg";
+import Hairline from "../assets/servicesImg"
 import "./Landing.css"
 
 const Services = () => {

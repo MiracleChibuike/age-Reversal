@@ -10,13 +10,14 @@ import Nav from "./Nav";
 import Hero from "./Hero";
 import WhyChoose from "./WhyChoose";
 import Services from "./Services";
+import favIcon from "../assets/Hair-services-icon-webp.webp";
 const Landing = () => {
 
     return (
       <>
         <Helmet>
           <title>Relaxing Spa & Manicure Services | Age Reversal Clinic</title>
-          <link rel="shortcut icon" href={translate} type="image/x-icon" />
+          <link rel="shortcut icon" href={favIcon} type="image/x-icon" />
           <meta
             name="description"
             content="Experience top-rated spa and manicure treatments that leave your skin glowing and your nails flawless. Book your pampering session today at Age Reversal Clinic."
