@@ -47,10 +47,17 @@ const Nav = () => {
       window.removeEventListener("scroll", sendToTop)
     }
 
-  }, [])
+  }, []);
+  const servicesNavigate = useNavigate();
+
+  const navigateServices = () => {
+    servicesNavigate("/Services");
+  }
     return (
       <>
-        <div className={`navContainer ${isSticky ? "sticky" : ""} `} ref={containerRef}>
+        <div
+          className={`navContainer ${isSticky ? "sticky" : ""} `}
+          ref={containerRef}>
           <div className="naviGation">
             <h2>Welcome to Age Reversal Clinic</h2>
             <div
@@ -70,7 +77,7 @@ const Nav = () => {
               <ul>
                 <li>HOME</li>
                 <li>ABOUT</li>
-                <li>SERVICES</li>
+                <li onClick={navigateServices}>SERVICES</li>
                 <li>BOOK</li>
                 <li>BLOG</li>
                 <li>CONTACT</li>

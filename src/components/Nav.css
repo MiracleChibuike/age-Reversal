@@ -69,7 +69,8 @@
     /* background: var(--clr-dark-main); */
 }
 .heroContainer{
-    background: url(../assets/heroImages/hero.svg);
+    background: linear-gradient(rgba(12, 7, 150, 0.8), rgba(12, 7, 150, 0.9)), 
+    url(../assets/Banner-in-webp.webp) no-repeat center/cover;
     color: var(--clr-primary-white);
     display: flex;
     justify-content: space-evenly;
@@ -78,6 +79,11 @@
     position: relative;
     top: -50px;
     margin-top: 130px;
+}
+.heroText h2{
+    font-weight: 900;
+     line-height: 100%;
+    font-size: 4rem;
 }
 .heroText p{
     font-size: 1.4rem;
@@ -169,5 +175,11 @@
         transform: translateX(2%);
         filter: saturate(50%);
         cursor: pointer;
+    }
+    .heroText h2{
+        font-size: 1rem;
+    }
+    #bestTxt{
+        font-size: 4rem;
     }
 }

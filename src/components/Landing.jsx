@@ -9,6 +9,7 @@ import "./Landing.css";
 import Nav from "./Nav";
 import Hero from "./Hero";
 import WhyChoose from "./WhyChoose";
+import Services from "./Services";
 const Landing = () => {
 
     return (
@@ -56,7 +57,7 @@ const Landing = () => {
                 />
               
                  <i
-                  class="fa-solid fa-magnifying-glass"
+                  className="fa-solid fa-magnifying-glass"
                   style={{
                     margin: "0 5px",
                     fontSize: "22px",
@@ -93,6 +94,8 @@ const Landing = () => {
         <Hero />
         {/* Import Why Choose Us Component */}
         <WhyChoose />
+        {/* Import Services Section */}
+        <Services />
       </>
     );
 };
