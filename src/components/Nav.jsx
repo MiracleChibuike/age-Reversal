@@ -77,7 +77,7 @@ const Nav = () => {
               <ul>
                 <li>HOME</li>
                 <li>ABOUT</li>
-                <li onClick={navigateServices}>SERVICES</li>
+                <li>SERVICES</li>
                 <li>BOOK</li>
                 <li>BLOG</li>
                 <li>CONTACT</li>

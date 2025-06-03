@@ -241,13 +241,13 @@ const Services = () => {
                 </button>
               </div>
               <div className="aboutTxt" style={{ margin: "8px 0" }}>
-                <p style={{ fontSize: "1.3rem" }}>
+                <p style={{ fontSize: "1.2rem" }}>
                   Clinical Director of Age Reversal Clinic, Faith is a
                   sought-after <br /> Skin Specialist, Aesthetic Nurse
                   Practitioner, Advanced <br /> Prescriber, and Phlebotomist.
-                  With BSc degrees in Psychology and Nursing, and extensive{" "}
-                  <br /> training from prestigious institutions, she brings over
-                  ten <br /> years of experience to the clinic.
+                  With BSc degrees in Psychology <br /> and Nursing, and extensive 
+                  training from prestigious institutions, she <br /> brings over
+                  ten years of experience to the clinic.
                 </p>
               </div>
             </div>

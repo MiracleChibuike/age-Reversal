@@ -10,6 +10,7 @@ import Nav from "./Nav";
 import Hero from "./Hero";
 import WhyChoose from "./WhyChoose";
 import Services from "./Services";
+import Consultation from "./Consultation";
 import favIcon from "../assets/Hair-services-icon-webp.webp";
 const Landing = () => {
 
@@ -97,6 +98,8 @@ const Landing = () => {
         <WhyChoose />
         {/* Import Services Section */}
         <Services />
+        {/* Import Consultation section here */}
+        <Consultation />
       </>
     );
 };
