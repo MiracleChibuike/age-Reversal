@@ -9,9 +9,21 @@ import Aesthetics_Icon from "../assets/Aesthetics-icon-webp.webp";
 import leftLine from "../assets/servicesImg/leftLine.svg";
 import Line from '../assets/servicesImg/line.svg';
 import More from "../assets/servicesImg/more.svg";
-import "./Landing.css"
+import Hair_Services from "../assets/Hair-services-webp.webp";
+import Hair_Icon from "../assets/Hair-services-icon-webp.webp";
+import Facials from "../assets/Facials-webp.webp";
+import Facials_Icon from "../assets/Facials-icon-webp.webp";
+// Director Import begins here
+import director from "../assets/director/director.svg";
+import coverDesign from "../assets/director/design.svg";
+import lined from "../assets/director/lined.svg"
+import "./Landing.css";
+// import AOS from "aos"
+import Aos from "aos";
 
 const Services = () => {
+  // Initialize AOS
+    Aos.init()
     return (
       <>
         {/* services container */}
@@ -22,7 +34,7 @@ const Services = () => {
             <img src={Line} style={{ width: "50%" }} alt="" />
           </div>
           {/* Services Containers - Outflow */}
-          <div className="mainServices_Render">
+          <div className="mainServices_Render" data-aos="fade-up-left">
             <div className="services_render">
               <div className="imgPlaceholder" style={{ display: "flex" }}>
                 <img src={Body_Shapping} id="image_placeholder_large" alt="" />
@@ -75,7 +87,7 @@ const Services = () => {
                 </p>
                 <p>
                   Our expert practitioners use high-quality <br /> injectables
-                  to rebalance and redefine the <br /> face.
+                  to rebalance and redefine <br /> the face.
                 </p>
               </div>
               <div
@@ -112,7 +124,7 @@ const Services = () => {
                 </p>
                 <p>
                   We provide advanced aesthetic treatments <br /> such as
-                  Platelet Rich Plasma (PRP) <br /> therapy, Non-Ablative
+                  Platelet Rich Plasma (PRP) therapy, <br /> Non-Ablative
                   Fractional Laser.
                 </p>
               </div>
@@ -132,7 +144,125 @@ const Services = () => {
                 </button>
               </div>
             </div>
+            {/* Render 4 */}
+            <div className="services_render">
+              <div className="imgPlaceholder" style={{ display: "flex" }}>
+                <img src={Hair_Services} id="image_placeholder_large" alt="" />
+                <img src={Hair_Icon} id="image_placeholder_small" alt="" />
+              </div>
+              <div className="servicesInfo" style={{ margin: "15px 0" }}>
+                <p style={{ color: "rgba(235, 126, 0, 1)", margin: "5px 0" }}>
+                  <strong>Hair Services</strong>
+                </p>
+                <p>
+                  Our clinic also offers a range of hair <br /> services to
+                  complement your beauty <br /> and wellness journey.
+                </p>
+              </div>
+              <div
+                className="more_link"
+                style={{ display: "flex", justifyContent: "space-between" }}>
+                <img src={More} alt="" />
+                <button
+                  style={{
+                    background: "rgba(12, 7, 150, 1)",
+                    padding: "10px 20px",
+                    border: "none",
+                    color: "#fff",
+                    borderRadius: "4px",
+                    position: "relative",
+                    left: "-45px",
+                  }}>
+                  See more
+                </button>
+              </div>
+            </div>
+
+            {/* Render 5 */}
+            <div className="services_render">
+              <div className="imgPlaceholder" style={{ display: "flex" }}>
+                <img src={Facials} id="image_placeholder_large" alt="" />
+                <img src={Facials_Icon} id="image_placeholder_small" alt="" />
+              </div>
+              <div className="servicesInfo" style={{ margin: "15px 0" }}>
+                <p style={{ color: "rgba(235, 126, 0, 1)", margin: "5px 0" }}>
+                  <strong>Facials</strong>
+                </p>
+                <p>
+                  Experience our bespoke facials designed <br /> to address
+                  various skin concerns, leaving <br /> your skin refreshed and
+                  radiant.
+                </p>
+              </div>
+              <div
+                className="more_link"
+                style={{ display: "flex", justifyContent: "space-between" }}>
+                <img src={More} alt="" />
+                <button
+                  style={{
+                    background: "rgba(12, 7, 150, 1)",
+                    padding: "10px 20px",
+                    border: "none",
+                    color: "#fff",
+                    borderRadius: "4px",
+                    position: "relative",
+                    left: "-45px",
+                  }}>
+                  See more
+                </button>
+              </div>
+            </div>
           </div>
+        </div>
+
+        {/* Director's View */}
+        <div className="director">
+          <div className="lineHeader" style={{ display: "flex" }}>
+            <img src={leftLine} alt="" />
+            <h2>Meet the director</h2>
+            <img src={Line} style={{ width: "50%" }} alt="" />
+          </div>
+          <div className="directors-profile">
+            <div className="director-About">
+              <div className="btn">
+                <button
+                  style={{
+                    color: "#fff",
+                    background: "rgba(14, 67, 242, 1)",
+                    fontWeight: "700",
+                    padding: "8px 15px",
+                    fontSize: "1.5rem",
+                    border: "none",
+                    margin: "20px 0",
+                    boxShadow: "0px 4px 4px 4px rgba(0, 0, 0, 0.25)",
+                    cursor: "pointer"
+                  }}>
+                  Faith Cris-Nzurike
+                </button>
+              </div>
+              <div className="aboutTxt">
+                <p style={{ fontSize: "1.5rem" }}>
+                  Clinical Director of Age Reversal Clinic, Faith is a
+                  sought-after <br /> Skin Specialist, Aesthetic Nurse
+                  Practitioner, Advanced Prescriber, <br /> and Phlebotomist.
+                  With BSc degrees in Psychology and Nursing, <br /> and
+                  extensive training from prestigious institutions, she brings{" "}
+                  <br /> over ten years of experience to the clinic.
+                </p>
+              </div>
+            </div>
+            <div className="directorImg">
+              <img
+                src={coverDesign}
+                alt=""
+                id="designCover"
+                style={{ position: "relative", left: "30px", top: "-210px" }}
+              />
+              <img src={director} alt="" id="directorCover" />
+              <img src={coverDesign} alt="" id="designCover" />
+            </div>
+          </div>
+          <img src={lined} alt="" />
         </div>
       </>
     );

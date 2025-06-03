@@ -23,7 +23,7 @@ const Hero = () => {
             </h2>
             <p style={{ fontWeight: "400" }}>
               At Age Reversal Clinic, we believe there's no <br /> shame in
-              wanting to look your best. Located in <br />
+              wanting to look your best. Located <br /> in 
               Grove Park, South East London, and <br /> Brentwood, Essex, our
               friendly team is here <br /> to help you feel fabulous.
             </p>
