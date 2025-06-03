@@ -235,34 +235,34 @@ const Services = () => {
                     border: "none",
                     margin: "20px 0",
                     boxShadow: "0px 4px 4px 4px rgba(0, 0, 0, 0.25)",
-                    cursor: "pointer"
+                    cursor: "pointer",
                   }}>
                   Faith Cris-Nzurike
                 </button>
               </div>
-              <div className="aboutTxt">
-                <p style={{ fontSize: "1.5rem" }}>
+              <div className="aboutTxt" style={{ margin: "8px 0" }}>
+                <p style={{ fontSize: "1.3rem" }}>
                   Clinical Director of Age Reversal Clinic, Faith is a
                   sought-after <br /> Skin Specialist, Aesthetic Nurse
-                  Practitioner, Advanced Prescriber, <br /> and Phlebotomist.
-                  With BSc degrees in Psychology and Nursing, <br /> and
-                  extensive training from prestigious institutions, she brings{" "}
-                  <br /> over ten years of experience to the clinic.
+                  Practitioner, Advanced <br /> Prescriber, and Phlebotomist.
+                  With BSc degrees in Psychology and Nursing, and extensive{" "}
+                  <br /> training from prestigious institutions, she brings over
+                  ten <br /> years of experience to the clinic.
                 </p>
               </div>
             </div>
-            <div className="directorImg">
+            <div className="directorImg" style={{ margin: "2px 0" }}>
               <img
                 src={coverDesign}
                 alt=""
-                id="designCover"
-                style={{ position: "relative", left: "30px", top: "-210px" }}
+                id="designCoverMain"
+                // style={{ position: "relative", left: "30px", top: "-210px" }}
               />
               <img src={director} alt="" id="directorCover" />
               <img src={coverDesign} alt="" id="designCover" />
             </div>
           </div>
-          <img src={lined} alt="" />
+          <img src={lined} style={{ width: "100%" }} alt="" />
         </div>
       </>
     );
