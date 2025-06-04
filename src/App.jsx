@@ -4,6 +4,7 @@ import Landing from "./components/Landing";
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Consultation from './components/Consultation';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
 
 

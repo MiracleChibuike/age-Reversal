@@ -11,6 +11,7 @@ import Hero from "./Hero";
 import WhyChoose from "./WhyChoose";
 import Services from "./Services";
 import Consultation from "./Consultation";
+import Footer from "./Footer";
 import favIcon from "../assets/Hair-services-icon-webp.webp";
 const Landing = () => {
 
@@ -100,6 +101,8 @@ const Landing = () => {
         <Services />
         {/* Import Consultation section here */}
         <Consultation />
+        {/* Import Footer */}
+        <Footer/>
       </>
     );
 };
