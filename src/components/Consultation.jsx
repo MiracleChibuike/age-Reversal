@@ -59,10 +59,9 @@ const Consultation = () => {
                Request a Free Consultation
              </h2>
              <p style={{ fontSize: "1.2rem", margin: "25px 0" }}>
-               Fill in the form below, and we'll be in <br /> touch to arrange
+               Fill in the form below, and we'll be <br /> in touch to arrange
                your free, no-obligation consultation. Opt-in <br /> to our
-               newsletter for special offers delivered directly to your
-               inbox.
+               newsletter for special offers delivered directly to your inbox.
              </p>
              <div className="buttonBook">
                <button
