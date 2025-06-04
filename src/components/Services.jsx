@@ -20,10 +20,15 @@ import lined from "../assets/director/lined.svg"
 import "./Landing.css";
 // import AOS from "aos"
 import Aos from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Services = () => {
-  // Initialize AOS
-    Aos.init()
+  useEffect(() => {
+    // Initialize AOS
+    Aos.init({
+      duration: 2000
+    });
+  }, [])
     return (
       <>
         {/* services container */}
@@ -34,7 +39,7 @@ const Services = () => {
             <img src={Line} style={{ width: "50%" }} alt="" />
           </div>
           {/* Services Containers - Outflow */}
-          <div className="mainServices_Render" data-aos="fade-up-left">
+          <div className="mainServices_Render" data-aos="zoom-in-up">
             <div className="services_render">
               <div className="imgPlaceholder" style={{ display: "flex" }}>
                 <img src={Body_Shapping} id="image_placeholder_large" alt="" />
@@ -223,7 +228,7 @@ const Services = () => {
             <img src={Line} style={{ width: "50%" }} alt="" />
           </div>
           <div className="directors-profile">
-            <div className="director-About">
+            <div className="director-About" >
               <div className="btn">
                 <button
                   style={{
@@ -245,13 +250,15 @@ const Services = () => {
                   Clinical Director of Age Reversal Clinic, Faith is a
                   sought-after <br /> Skin Specialist, Aesthetic Nurse
                   Practitioner, Advanced <br /> Prescriber, and Phlebotomist.
-                  With BSc degrees in Psychology <br /> and Nursing, and extensive 
-                  training from prestigious institutions, she <br /> brings over
-                  ten years of experience to the clinic.
+                  With BSc degrees in Psychology <br /> and Nursing, and
+                  extensive training from prestigious institutions, she <br />{" "}
+                  brings over ten years of experience to the clinic.
                 </p>
               </div>
             </div>
-            <div className="directorImg" style={{ margin: "2px 0" }}>
+            <div
+              className="directorImg"
+              style={{ margin: "2px 0" }}>
               <img
                 src={coverDesign}
                 alt=""

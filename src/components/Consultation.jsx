@@ -2,16 +2,25 @@ import React, { useRef, useEffect } from "react";
 import consult from "../assets/consult/consultation.svg";
 import consult2 from "../assets/consult/consult2.svg";
 import consult3 from "../assets/consult/consult3.svg";
-import "./Consult.css"
+import "./Consult.css";
+import Aos from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Consultation = () => {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      once: false
+    })
+  }, []);
    return (
      <>
        {/* Consultation Box */}
        <div
          className="consult"
          style={{ margin: "30px 0 0 0", padding: "0 30px" }}>
-         <div className="btnOverhaul">
+         <div className="btnOverhaul" data-os="fade-left">
            <button
              style={{
                background: "rgba(235, 126, 0, 1)",
@@ -41,7 +50,7 @@ const Consultation = () => {
              //  justifyContent: "space-evenly",
              flexWrap: "wrap",
            }}>
-           <div className="consultImg" style={{ display: "flex" }}>
+           <div className="consultImg" style={{ display: "flex" }} >
              <img src={consult} alt="" />
              <div style={{ margin: "0 10px" }}>
                <p>
