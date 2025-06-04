@@ -1,5 +1,5 @@
 
-import {react, useState, useRef} from "react";
+import {react, useState, useRef, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import translate from "../assets/headerImages/translate.svg";
@@ -14,7 +14,16 @@ import Consultation from "./Consultation";
 import Footer from "./Footer";
 import favIcon from "../assets/Hair-services-icon-webp.webp";
 const Landing = () => {
-
+    const loaderRef = useRef(null);
+    const [isLoader, setIsLoader] = useState(true) //To show loader by default
+    useEffect(() => {
+        setIsLoader(loaderRef);
+       const timer =  setTimeout(() => {
+          setIsLoader(false)
+        }, 5000)
+     return () => clearTimeout(timer); //calling the fnc
+      // document.body.innerHTML = loaderRef.current;
+    }, [])
     return (
       <>
         <Helmet>
@@ -45,64 +54,91 @@ const Landing = () => {
           {/* Pass actual Favicon/logo gere */}
           <meta property="og:image" content="" />
         </Helmet>
+        {/* For Loader */}
+        {isLoader && (
+          <header id="loaderSpan" ref={loaderRef}>
+            <h2>Age Reversal</h2>
+            <br />
+            <h2>Getting Ready</h2>
+            <br />
+            <span
+              style={{ position: "relative", left: "20px" }}
+              class="loader"></span>
+          </header>
+        )}
+        {!isLoader && (
+          <>
+            {/* Home Container */}
 
-        {/* Home Container */}
-        {/* To show On Mobile Top */}
-        <div className="mobileHeader">
-          <div className="logo">
-            <h2>Age</h2>
-          </div>
-          <div className="actionsMobile">
-            <img
-              src={translate}
-              alt=""
-              style={{ margin: "0 10px", width: "30px" }}
-            />
-
-            <i
-              className="fa-solid fa-magnifying-glass"
-              style={{
-                margin: "0 5px",
-                fontSize: "22px",
-                position: "relative",
-                top: "-5px",
-              }}></i>
-          </div>
-        </div>
-        <div className="landing">
-          <div className="headerBanner">
-            <div className="headerInfo">
-              <div>Hair • Beauty • Medical</div>
-            </div>
-            {/* for translate and search */}
-            <div className="actionHeader">
-              <div className="translate">
-                <img src={translate} alt="" />
-                <span>English</span>
+            {/* To show On Mobile Top */}
+            <div className="mobileHeader">
+              <div className="logo">
+                <h2>Age</h2>
               </div>
-              <div className="user">
-                <img src={user} alt="" />
-                <span>LogIn</span>
-              </div>
-              <div className="search">
-                <input type="search" id="searchContent" placeholder="Search" />
-                <img src={search} id="searchIcon" alt="" />
+              <div className="actionsMobile">
+                <img
+                  src={translate}
+                  alt=""
+                  style={{ margin: "0 10px", width: "30px" }}
+                />
+                <i
+                  className="fa-solid fa-magnifying-glass"
+                  style={{
+                    margin: "0 5px",
+                    fontSize: "22px",
+                    position: "relative",
+                    top: "-5px",
+                  }}></i>
               </div>
             </div>
-          </div>
-        </div>
-        {/* Import Nav Component */}
-        <Nav />
-        {/* Import The Hero Component */}
-        <Hero />
-        {/* Import Why Choose Us Component */}
-        <WhyChoose />
-        {/* Import Services Section */}
-        <Services />
-        {/* Import Consultation section here */}
-        <Consultation />
-        {/* Import Footer */}
-        <Footer />
+
+            <div className="landing">
+              <div className="headerBanner">
+                <div className="headerInfo">
+                  <div>Hair • Beauty • Medical</div>
+                </div>
+
+                {/* for translate and search */}
+                <div className="actionHeader">
+                  <div className="translate">
+                    <img src={translate} alt="" />
+                    <span>English</span>
+                  </div>
+                  <div className="user">
+                    <img src={user} alt="" />
+                    <span>LogIn</span>
+                  </div>
+                  <div className="search">
+                    <input
+                      type="search"
+                      id="searchContent"
+                      placeholder="Search"
+                    />
+                    <img src={search} id="searchIcon" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Import Nav Component */}
+            <Nav />
+
+            {/* Import The Hero Component */}
+            <Hero />
+
+            {/* Import Why Choose Us Component */}
+            <WhyChoose />
+
+            {/* Import Services Section */}
+            <Services />
+
+            {/* Import Consultation section here */}
+            <Consultation />
+
+            {/* Import Footer */}
+            <Footer />
+          </>
+        )}
       </>
     );
 };
