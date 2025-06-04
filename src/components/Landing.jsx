@@ -33,11 +33,11 @@ const Landing = () => {
           {/* Open Graph For Social Media */}
           <meta
             property="og:ttile"
-            content="Relaxing Spa & Manicure Services | GlowUp Beauty Lounge"
+            content="Relaxing Spa & Manicure Services | Age Reversal Clinic"
           />
           <meta
             property="og:description"
-            content="Indulge in luxurious spa and manicure treatments. Let your skin and nails shine."
+            content="Indulge in luxurious spa and manicure treatments. Let your skin and nails shine. Experience top-rated spa and manicure treatments that leave your skin glowing and your nails flawless. Book your pampering session today at Age Reversal Clinic."
           />
           <meta property="og:type" content="website" />
           {/* Pass actual website URL Here */}
@@ -53,20 +53,20 @@ const Landing = () => {
             <h2>Age</h2>
           </div>
           <div className="actionsMobile">
-                <img
-                  src={translate}
-                  alt=""
-                  style={{ margin: "0 10px", width: "30px" }}
-                />
-              
-                 <i
-                  className="fa-solid fa-magnifying-glass"
-                  style={{
-                    margin: "0 5px",
-                    fontSize: "22px",
-                    position: "relative",
-                    top: "-5px",
-                  }}></i>
+            <img
+              src={translate}
+              alt=""
+              style={{ margin: "0 10px", width: "30px" }}
+            />
+
+            <i
+              className="fa-solid fa-magnifying-glass"
+              style={{
+                margin: "0 5px",
+                fontSize: "22px",
+                position: "relative",
+                top: "-5px",
+              }}></i>
           </div>
         </div>
         <div className="landing">
@@ -102,7 +102,7 @@ const Landing = () => {
         {/* Import Consultation section here */}
         <Consultation />
         {/* Import Footer */}
-        <Footer/>
+        <Footer />
       </>
     );
 };
