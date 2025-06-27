@@ -23,7 +23,7 @@ const Consultation = () => {
          <div className="btnOverhaul" data-os="fade-left">
            <button
              style={{
-               background: "rgba(235, 126, 0, 1)",
+               background: "rgba(216, 219, 222, 0.9)",
                borderRadius: "10px",
                width: "100px",
                height: "20px",
@@ -34,7 +34,7 @@ const Consultation = () => {
              }}></button>{" "}
            <button
              style={{
-               background: "rgba(12, 7, 150, 1)",
+               background: "rgba(156, 157, 159, 1)",
                borderRadius: "10px",
                width: "130px",
                height: "20px",
@@ -50,7 +50,7 @@ const Consultation = () => {
              //  justifyContent: "space-evenly",
              flexWrap: "wrap",
            }}>
-           <div className="consultImg" style={{ display: "flex" }} >
+           <div className="consultImg" style={{ display: "flex" }}>
              <img src={consult} alt="" />
              <div style={{ margin: "0 10px" }}>
                <p>
@@ -76,7 +76,7 @@ const Consultation = () => {
                <button
                  id="book_btn"
                  style={{
-                   background: "rgba(12, 7, 150, 1)",
+                   background: "rgba(156, 157, 159, 1)",
                    padding: "10px 25px",
                    border: "none",
                    color: "#fff",

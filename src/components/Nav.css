@@ -1,17 +1,20 @@
 :root{
     --clr-primary-white: #fff;
     --clr-dark-main: rgba(30, 30, 30, 1);
-    --clr-nav-main: rgba(14, 67, 242, 1);
-    --clr-nav-contents: rgba(12, 7, 150, 1);
-    --clr-top-headre: rgba(59, 105, 255, 1);
+    /* --clr-nav-main: rgba(14, 67, 242, 1); */
+    /* --clr-nav-contents: rgba(12, 7, 150, 1); */
+    --clr-top-headre: rgba(156, 157, 159, 1);
     --clr-search-container: rgba(30, 30, 30, 1);
-    --clr-home-container: rgba(12, 7, 150, 0.8);
-    --clr-choose-us: rgba(59, 105, 255, 1);
-    --clr-text-headers: rgba(235, 126, 0, 1);
+    /* --clr-home-container: rgba(12, 7, 150, 0.8); */
+    --clr-choose-us: rgba(156, 157, 159, 1);
+    /* --clr-text-headers: rgba(235, 126, 0, 1); */
+    --clr-New-Header: rgba(216, 219, 222, 1);
+    --clr-NavBar-Bg: rgba(216, 219, 222, 0.9);
+    --clr-Nav-Items-Bg: rgba(156, 157, 159, 1);
   }
 
 .navContainer{
-    background: var(--clr-top-headre);
+    background: var(--clr-NavBar-Bg);
     margin-top: 30px;
     margin-left: 63px;
     margin-right: 63px;
@@ -23,6 +26,7 @@
     position: absolute;
     left: 0;
     right: 0;
+    color: var(--clr-dark-main);
 }
 .sticky{
     position: fixed;
@@ -35,7 +39,7 @@
 }
 .navContainer h2{
     line-height: 100%;
-    color: var(--clr-primary-white);
+    color: var(--clr-dark-main);
     font-weight: 500;
     margin-top: 7px;
 }
@@ -48,8 +52,8 @@
 }
 
 .navigationLinks{
-    background: var(--clr-home-container);
-    color: var(--clr-primary-white);
+    background: var(--clr-Nav-Items-Bg);
+    color: var(--clr-dark-main);
     border-radius: 5px;
     padding: 15px 10px;
 }
@@ -69,9 +73,9 @@
     /* background: var(--clr-dark-main); */
 }
 .heroContainer{
-    background: linear-gradient(rgba(57, 54, 137, 0.9), rgba(57, 54, 137, 0.8)), 
-    url(../assets/Banner-in-webp.webp) no-repeat center/cover;
-    color: var(--clr-primary-white);
+    background: linear-gradient(rgba(216, 219, 222, 0.9), rgba(216, 219, 222, 0.9)), 
+    url(../assets/hero/bannerMain.svg);
+    color: var(--clr-dark-main);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -124,7 +128,8 @@
         top: 0;
         width: 80%;
         height: 70vh;
-        background: var(--clr-top-headre);
+        background: var(--clr-Nav-Items-Bg);
+        color: var(--clr-primary-white);
         box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
         animation: slideInLeft 0.7s ease forwards;
         z-index: 999;
@@ -139,6 +144,7 @@
     .navContainer{
         margin: 0px 0px;
         padding: 27px 20px;
+        background: var(--clr-NavBar-Bg);
     }
     .navContainer h2{
         margin-top: -3px;

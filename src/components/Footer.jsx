@@ -24,7 +24,7 @@ const Footer = () => {
                 Phone: 07984159517 | 0208 857 2000 <br />{" "}
                 <a
                   href="mailto:info@agereversalmedspa.com"
-                  style={{ color: "#fff", textDecoration: "none" }}>
+                  style={{ textDecoration: "none" }}>
                   info@agereversalmedspa.com
                 </a>
               </p>

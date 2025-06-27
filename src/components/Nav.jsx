@@ -63,7 +63,7 @@ const Nav = () => {
             <div
               className="menuClick"
               ref={menuClick}
-              style={{ margin: "0 10px", color: "#fff" }}>
+              style={{ margin: "0 10px"}}>
               <i
                 className="fa-solid fa-bars"
                 onClick={navOpen}

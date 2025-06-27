@@ -1,20 +1,23 @@
 :root{
-    --clr-primary-white: #fff;
-    --clr-dark-main: rgba(30, 30, 30, 1);
-    --clr-nav-main: rgba(14, 67, 242, 1);
-    --clr-nav-contents: rgba(12, 7, 150, 1);
-    --clr-top-headre: rgba(59, 105, 255, 1);
-    --clr-search-container: rgba(30, 30, 30, 1);
-    --clr-home-container: rgba(12, 7, 150, 0.8);
-    --clr-choose-us: rgba(59, 105, 255, 1);
-    --clr-text-headers: rgba(235, 126, 0, 1);
-  }
+  --clr-primary-white: #fff;
+  --clr-dark-main: rgba(30, 30, 30, 1);
+  /* --clr-nav-main: rgba(14, 67, 242, 1); */
+  /* --clr-nav-contents: rgba(12, 7, 150, 1); */
+  --clr-top-headre: rgba(156, 157, 159, 1);
+  --clr-search-container: rgba(30, 30, 30, 1);
+  /* --clr-home-container: rgba(12, 7, 150, 0.8); */
+  --clr-choose-us: rgba(156, 157, 159, 1);
+  /* --clr-text-headers: rgba(235, 126, 0, 1); */
+  --clr-New-Header: rgba(216, 219, 222, 1);
+  --clr-NavBar-Bg: rgba(216, 219, 222, 0.9);
+  --clr-Nav-Items-Bg: rgba(156, 157, 159, 1);
+}
 /* Loader */
 #loaderSpan{
   display: grid;
   place-content: center;
   min-height: 100vh;
-  background: var(--clr-text-headers);
+  background: var(--clr-NavBar-Bg);
 }
 .loader {
   position: relative;
@@ -89,7 +92,7 @@
   }
   #image_placeholder_large{
     width: 100%;
-    border-bottom: 5px solid var(--clr-home-container);
+    border-bottom: 5px solid var(--clr-Nav-Items-Bg);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -113,7 +116,7 @@
   }
   .actionHeader {
     display: flex;
-    background: var(--clr-top-headre);
+    background: var(--clr-New-Header);
     padding: 10px 0;
     border-radius: 5px;
   }
@@ -175,7 +178,7 @@
   flex-wrap: wrap;
 }
 .bestClinic, .bestScientific, .bestConsult{
-  background: var(--clr-choose-us);
+  background: var(--clr-Nav-Items-Bg);
   border-radius: 8px;
   box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 35px 30px;
@@ -184,6 +187,13 @@
   position: relative;
   top: -150px;
   transition: transform 0.9s ease, background-color 0.9s ease;
+}
+.servicesInfo p strong{
+  font-size: 1.2rem;
+  /* display: none; */
+}
+.servicesInfo p{
+  margin: 15px 0;
 }
 .bestClinic:hover, .bestScientific:hover, .bestConsult:hover{
   transform: translateY(20%);
@@ -195,7 +205,7 @@
 }
 /* Director's Cover */
 #directorCover{
-  border-left: 7px solid var(--clr-top-headre);
+  border-left: 7px solid var(--clr-Nav-Items-Bg);
   border-radius: 50%;
   transition: transform 0.9s ease, background-color 0.9s ease;
   /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -272,6 +282,10 @@
     }
     #image_placeholder_small{
       width: 50px;
+    }
+    .servicesInfo p{
+      text-align: justify;
+      margin: 15px 0;
     }
     /* Director */
     .director{

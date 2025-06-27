@@ -8,15 +8,17 @@ import Aesthetoics from "../assets/Aesthetics-webp.webp";
 import Aesthetics_Icon from "../assets/Aesthetics-icon-webp.webp";
 import leftLine from "../assets/servicesImg/leftLine.svg";
 import Line from '../assets/servicesImg/line.svg';
-import More from "../assets/servicesImg/more.svg";
+import More from "../assets/servicesImg/actionRule.svg";
 import Hair_Services from "../assets/Hair-services-webp.webp";
 import Hair_Icon from "../assets/Hair-services-icon-webp.webp";
 import Facials from "../assets/Facials-webp.webp";
 import Facials_Icon from "../assets/Facials-icon-webp.webp";
 // Director Import begins here
-import director from "../assets/director/director.svg";
-import coverDesign from "../assets/director/design.svg";
-import lined from "../assets/director/lined.svg"
+import directorProfile from "../assets/director/directorProfile.svg"
+import coverDesign from "../assets/director/Eclipse.svg";
+import lined from "../assets/director/fullRullLine.svg";
+import ruleLine from "../assets/servicesImg/LinePart.svg";
+import LinePart2 from "../assets/servicesImg/LinePart2.svg"
 import "./Landing.css";
 // import AOS from "aos"
 import Aos from "aos";
@@ -34,9 +36,9 @@ const Services = () => {
         {/* services container */}
         <div className="services-container">
           <div className="lineHeader" style={{ display: "flex" }}>
-            <img src={leftLine} alt="" />
+            <img src={ruleLine} alt="" />
             <h2>Our Services</h2>
-            <img src={Line} style={{ width: "50%" }} alt="" />
+            <img src={LinePart2} style={{ width: "50%" }} alt="" />
           </div>
           {/* Services Containers - Outflow */}
           <div className="mainServices_Render" data-aos="zoom-in-up">
@@ -50,12 +52,12 @@ const Services = () => {
                 />
               </div>
               <div className="servicesInfo" style={{ margin: "15px 0" }}>
-                <p style={{ color: "rgba(235, 126, 0, 1)", margin: "5px 0" }}>
+                <p style={{ margin: "5px 0" }}>
                   <strong>Body shaping</strong>
                 </p>
                 <p>
-                  We offer non-surgical fat reduction <br /> methods focusing on
-                  proven medications <br /> and technologies.
+                  We offer non-surgical fat reduction methods focusing on
+                  proven medications and technologies.
                 </p>
               </div>
               <div
@@ -64,7 +66,7 @@ const Services = () => {
                 <img src={More} alt="" />
                 <button
                   style={{
-                    background: "rgba(12, 7, 150, 1)",
+                    background: "rgba(156, 157, 159, 1)",
                     padding: "10px 20px",
                     border: "none",
                     color: "#fff",
@@ -87,12 +89,12 @@ const Services = () => {
                 />
               </div>
               <div className="servicesInfo" style={{ margin: "15px 0" }}>
-                <p style={{ color: "rgba(235, 126, 0, 1)", margin: "5px 0" }}>
+                <p style={{ margin: "5px 0" }}>
                   <strong>Injectables</strong>
                 </p>
                 <p>
-                  Our expert practitioners use high-quality <br /> injectables
-                  to rebalance and redefine <br /> the face.
+                  Our expert practitioners use high-quality  injectables
+                  to rebalance and redefine  the face.
                 </p>
               </div>
               <div
@@ -101,7 +103,7 @@ const Services = () => {
                 <img src={More} alt="" />
                 <button
                   style={{
-                    background: "rgba(12, 7, 150, 1)",
+                    background: "rgba(156, 157, 159, 1)",
                     padding: "10px 20px",
                     border: "none",
                     color: "#fff",
@@ -124,12 +126,12 @@ const Services = () => {
                 />
               </div>
               <div className="servicesInfo" style={{ margin: "15px 0" }}>
-                <p style={{ color: "rgba(235, 126, 0, 1)", margin: "5px 0" }}>
-                  <strong>Aesthetoics</strong>
+                <p style={{ margin: "5px 0" }}>
+                  <strong>Aesthetics</strong>
                 </p>
                 <p>
-                  We provide advanced aesthetic treatments <br /> such as
-                  Platelet Rich Plasma (PRP) therapy, <br /> Non-Ablative
+                  We provide advanced aesthetic treatments such as
+                  Platelet Rich Plasma (PRP) therapy, Non-Ablative
                   Fractional Laser.
                 </p>
               </div>
@@ -137,7 +139,7 @@ const Services = () => {
                 <img src={More} alt="" />
                 <button
                   style={{
-                    background: "rgba(12, 7, 150, 1)",
+                    background: "rgba(156, 157, 159, 1)",
                     padding: "10px 20px",
                     border: "none",
                     color: "#fff",
@@ -156,12 +158,12 @@ const Services = () => {
                 <img src={Hair_Icon} id="image_placeholder_small" alt="" />
               </div>
               <div className="servicesInfo" style={{ margin: "15px 0" }}>
-                <p style={{ color: "rgba(235, 126, 0, 1)", margin: "5px 0" }}>
+                <p style={{ margin: "5px 0" }}>
                   <strong>Hair Services</strong>
                 </p>
                 <p>
-                  Our clinic also offers a range of hair <br /> services to
-                  complement your beauty <br /> and wellness journey.
+                  Our clinic also offers a range of hair services to
+                  complement your beauty and wellness journey.
                 </p>
               </div>
               <div
@@ -170,7 +172,7 @@ const Services = () => {
                 <img src={More} alt="" />
                 <button
                   style={{
-                    background: "rgba(12, 7, 150, 1)",
+                    background: "rgba(156, 157, 159, 1)",
                     padding: "10px 20px",
                     border: "none",
                     color: "#fff",
@@ -190,12 +192,12 @@ const Services = () => {
                 <img src={Facials_Icon} id="image_placeholder_small" alt="" />
               </div>
               <div className="servicesInfo" style={{ margin: "15px 0" }}>
-                <p style={{ color: "rgba(235, 126, 0, 1)", margin: "5px 0" }}>
+                <p style={{ margin: "5px 0" }}>
                   <strong>Facials</strong>
                 </p>
                 <p>
-                  Experience our bespoke facials designed <br /> to address
-                  various skin concerns, leaving <br /> your skin refreshed and
+                  Experience our bespoke facials designed to address
+                  various skin concerns, leaving your skin refreshed and
                   radiant.
                 </p>
               </div>
@@ -205,7 +207,7 @@ const Services = () => {
                 <img src={More} alt="" />
                 <button
                   style={{
-                    background: "rgba(12, 7, 150, 1)",
+                    background: "rgba(156, 157, 159, 1)",
                     padding: "10px 20px",
                     border: "none",
                     color: "#fff",
@@ -223,17 +225,17 @@ const Services = () => {
         {/* Director's View */}
         <div className="director">
           <div className="lineHeader" style={{ display: "flex" }}>
-            <img src={leftLine} alt="" />
+            <img src={ruleLine} alt="" />
             <h2>Meet the director</h2>
-            <img src={Line} style={{ width: "50%" }} alt="" />
+            <img src={LinePart2} style={{ width: "50%" }} alt="" />
           </div>
           <div className="directors-profile">
-            <div className="director-About" >
+            <div className="director-About">
               <div className="btn">
                 <button
                   style={{
                     color: "#fff",
-                    background: "rgba(14, 67, 242, 1)",
+                    background: "rgba(156, 157, 159, 1)",
                     fontWeight: "700",
                     padding: "8px 15px",
                     fontSize: "1.5rem",
@@ -256,16 +258,14 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div
-              className="directorImg"
-              style={{ margin: "2px 0" }}>
+            <div className="directorImg" style={{ margin: "2px 0" }}>
               <img
                 src={coverDesign}
                 alt=""
                 id="designCoverMain"
                 // style={{ position: "relative", left: "30px", top: "-210px" }}
               />
-              <img src={director} alt="" id="directorCover" />
+              <img src={directorProfile} alt="" id="directorCover" />
               <img src={coverDesign} alt="" id="designCover" />
             </div>
           </div>
