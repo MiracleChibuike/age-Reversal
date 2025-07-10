@@ -76,7 +76,7 @@ const Consultation = () => {
                <button
                  id="book_btn"
                  style={{
-                   background: "rgba(156, 157, 159, 1)",
+                   background: "rgba(33, 33, 37, 1)",
                    padding: "10px 25px",
                    border: "none",
                    color: "#fff",

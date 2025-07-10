@@ -1,6 +1,7 @@
 
 import { useState, useEffect, react } from "react";
 import Body_Shapping from "../assets/Body-shaping-webp.webp";
+import B_Shape from "../assets/servicesImg/Body_shaping_webp.webp"
 import Body_shapping_icon from "../assets/Body-shaping-icon-webp.webp";
 import Injectables_icon from "../assets/Injectables-icon-webp.webp";
 import Injectables from "../assets/Injectables-webp.webp";
@@ -8,14 +9,14 @@ import Aesthetoics from "../assets/Aesthetics-webp.webp";
 import Aesthetics_Icon from "../assets/Aesthetics-icon-webp.webp";
 import leftLine from "../assets/servicesImg/leftLine.svg";
 import Line from '../assets/servicesImg/line.svg';
-import More from "../assets/servicesImg/actionRule.svg";
+import More from "../assets/servicesImg/moreMain.svg";
 import Hair_Services from "../assets/Hair-services-webp.webp";
 import Hair_Icon from "../assets/Hair-services-icon-webp.webp";
 import Facials from "../assets/Facials-webp.webp";
 import Facials_Icon from "../assets/Facials-icon-webp.webp";
 // Director Import begins here
 import directorProfile from "../assets/director/directorProfile.svg"
-import coverDesign from "../assets/director/Eclipse.svg";
+import coverDesign from "../assets/director/newEclipse.svg";
 import lined from "../assets/director/fullRullLine.svg";
 import ruleLine from "../assets/servicesImg/LinePart.svg";
 import LinePart2 from "../assets/servicesImg/LinePart2.svg"
@@ -44,7 +45,7 @@ const Services = () => {
           <div className="mainServices_Render" data-aos="zoom-in-up">
             <div className="services_render">
               <div className="imgPlaceholder" style={{ display: "flex" }}>
-                <img src={Body_Shapping} id="image_placeholder_large" alt="" />
+                <img src={B_Shape} style={{position: "relative", left: "10px"}}  id="image_placeholder_large" alt="" />
                 <img
                   src={Body_shapping_icon}
                   id="image_placeholder_small"
@@ -64,16 +65,7 @@ const Services = () => {
                 className="more_link"
                 style={{ display: "flex", justifyContent: "space-between" }}>
                 <img src={More} alt="" />
-                <button
-                  style={{
-                    background: "rgba(156, 157, 159, 1)",
-                    padding: "10px 20px",
-                    border: "none",
-                    color: "#fff",
-                    borderRadius: "4px",
-                    position: "relative",
-                    left: "-45px",
-                  }}>
+                <button>
                   See more
                 </button>
               </div>
@@ -101,16 +93,7 @@ const Services = () => {
                 className="more_link"
                 style={{ display: "flex", justifyContent: "space-between" }}>
                 <img src={More} alt="" />
-                <button
-                  style={{
-                    background: "rgba(156, 157, 159, 1)",
-                    padding: "10px 20px",
-                    border: "none",
-                    color: "#fff",
-                    borderRadius: "4px",
-                    position: "relative",
-                    left: "-45px",
-                  }}>
+                <button>
                   See more
                 </button>
               </div>
@@ -137,16 +120,7 @@ const Services = () => {
               </div>
               <div className="more_link" style={{}}>
                 <img src={More} alt="" />
-                <button
-                  style={{
-                    background: "rgba(156, 157, 159, 1)",
-                    padding: "10px 20px",
-                    border: "none",
-                    color: "#fff",
-                    borderRadius: "4px",
-                    position: "relative",
-                    left: "-45px",
-                  }}>
+                <button>
                   See more
                 </button>
               </div>
@@ -170,16 +144,7 @@ const Services = () => {
                 className="more_link"
                 style={{ display: "flex", justifyContent: "space-between" }}>
                 <img src={More} alt="" />
-                <button
-                  style={{
-                    background: "rgba(156, 157, 159, 1)",
-                    padding: "10px 20px",
-                    border: "none",
-                    color: "#fff",
-                    borderRadius: "4px",
-                    position: "relative",
-                    left: "-45px",
-                  }}>
+                <button>
                   See more
                 </button>
               </div>
@@ -205,16 +170,7 @@ const Services = () => {
                 className="more_link"
                 style={{ display: "flex", justifyContent: "space-between" }}>
                 <img src={More} alt="" />
-                <button
-                  style={{
-                    background: "rgba(156, 157, 159, 1)",
-                    padding: "10px 20px",
-                    border: "none",
-                    color: "#fff",
-                    borderRadius: "4px",
-                    position: "relative",
-                    left: "-45px",
-                  }}>
+                <button>
                   See more
                 </button>
               </div>
@@ -235,7 +191,7 @@ const Services = () => {
                 <button
                   style={{
                     color: "#fff",
-                    background: "rgba(156, 157, 159, 1)",
+                    background: "rgba(33, 33, 37, 1)",
                     fontWeight: "700",
                     padding: "8px 15px",
                     fontSize: "1.5rem",

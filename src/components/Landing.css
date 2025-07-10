@@ -86,13 +86,27 @@
     transition: .7s;
     cursor: pointer;
   }
+  .more_link button{
+    background: rgba(33, 33, 37, 1);
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    position: relative;
+    left: -45px;
+  }
+  .more_link > button:hover{
+    cursor: pointer;
+    background: rgb(99, 97, 97);
+    transition: .4s;
+  }
   .more_link{
     display: flex;
     justify-content: space-between;
   }
   #image_placeholder_large{
     width: 100%;
-    border-bottom: 5px solid var(--clr-Nav-Items-Bg);
+    border-bottom: 5px solid rgba(33, 33, 37, 1);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -178,9 +192,10 @@
   flex-wrap: wrap;
 }
 .bestClinic, .bestScientific, .bestConsult{
-  background: var(--clr-Nav-Items-Bg);
+  background: rgba(33, 33, 37, 1);
   border-radius: 8px;
-  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25); */
   padding: 35px 30px;
   color: var(--clr-primary-white);
   z-index: 100;
@@ -205,9 +220,12 @@
 }
 /* Director's Cover */
 #directorCover{
-  border-left: 7px solid var(--clr-Nav-Items-Bg);
+  background:  rgba(33, 33, 37, 1);
   border-radius: 50%;
+  width: 250px;
+  height: 250px;
   transition: transform 0.9s ease, background-color 0.9s ease;
+  padding: 0 5px;
   /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25); */
 
 }

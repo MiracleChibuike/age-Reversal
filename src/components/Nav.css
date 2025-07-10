@@ -9,12 +9,12 @@
     --clr-choose-us: rgba(156, 157, 159, 1);
     /* --clr-text-headers: rgba(235, 126, 0, 1); */
     --clr-New-Header: rgba(216, 219, 222, 1);
-    --clr-NavBar-Bg: rgba(216, 219, 222, 0.9);
+    --clr-NavBar-Bg: rgba(156, 157, 159, 1);
     --clr-Nav-Items-Bg: rgba(156, 157, 159, 1);
   }
 
 .navContainer{
-    background: var(--clr-NavBar-Bg);
+    background: rgba(156, 157, 159, 1);
     margin-top: 30px;
     margin-left: 63px;
     margin-right: 63px;
@@ -39,7 +39,7 @@
 }
 .navContainer h2{
     line-height: 100%;
-    color: var(--clr-dark-main);
+    color: var(--clr-primary-white);
     font-weight: 500;
     margin-top: 7px;
 }
@@ -52,7 +52,7 @@
 }
 
 .navigationLinks{
-    background: var(--clr-Nav-Items-Bg);
+    background: rgba(216, 216, 222, 1);
     color: var(--clr-dark-main);
     border-radius: 5px;
     padding: 15px 10px;
@@ -73,9 +73,9 @@
     /* background: var(--clr-dark-main); */
 }
 .heroContainer{
-    background: linear-gradient(rgba(216, 219, 222, 0.9), rgba(216, 219, 222, 0.9)), 
+    background: linear-gradient(rgba(50, 50, 52, 0.8), rgba(50, 50, 52, 0.8)), 
     url(../assets/hero/bannerMain.svg);
-    color: var(--clr-dark-main);
+    color: var(--clr-primary-white);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -128,7 +128,7 @@
         top: 0;
         width: 80%;
         height: 70vh;
-        background: var(--clr-Nav-Items-Bg);
+        background: rgba(156, 157, 159, 1);
         color: var(--clr-primary-white);
         box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
         animation: slideInLeft 0.7s ease forwards;
@@ -148,6 +148,7 @@
     }
     .navContainer h2{
         margin-top: -3px;
+        color: var(--clr-dark-main);
     }
     .menuClick{
         display: block;

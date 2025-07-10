@@ -59,11 +59,13 @@ const Nav = () => {
           className={`navContainer ${isSticky ? "sticky" : ""} `}
           ref={containerRef}>
           <div className="naviGation">
-            <h2>Welcome to Age Reversal Clinic</h2>
+            <h2>
+              Welcome to Age Reversal Clinic
+            </h2>
             <div
               className="menuClick"
               ref={menuClick}
-              style={{ margin: "0 10px"}}>
+              style={{ margin: "0 10px" }}>
               <i
                 className="fa-solid fa-bars"
                 onClick={navOpen}

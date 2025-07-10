@@ -2,7 +2,7 @@ import {React, useState} from "react";
 import hero from "../assets/heroImages/hero.svg";
 import heroBanner from "../assets/heroImages/heroBanner.svg";
 import Banner_Webp from "../assets/Banner-webp.webp";
-import headerLine from "../assets/hero/headerLine.svg";
+import headerLine from "../assets/hero/headerLine2.svg";
 import mainBanner from "../assets/hero/bannerMain.svg"
 import "./Nav.css";
 const Hero = () => {

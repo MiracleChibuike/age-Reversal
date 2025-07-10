@@ -63,7 +63,7 @@ const Landing = () => {
             <br />
             <span
               style={{ position: "relative", left: "20px" }}
-              class="loader"></span>
+              className="loader"></span>
           </header>
         )}
         {!isLoader && (

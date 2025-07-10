@@ -21,10 +21,22 @@ const Footer = () => {
             </div>
             <div className="link_ad3">
               <p>
-                Phone: 07984159517 | 0208 857 2000 <br />{" "}
+                Phone:{" "}
+                <a
+                  href="tel:+4407984159517"
+                  style={{ textDecoration: "none", color: "#fff" }}>
+                  0798 415 9517
+                </a>{" "}
+                |{" "}
+                <a
+                  href="tel:+440208 857 2000"
+                  style={{ textDecoration: "none", color: "#fff" }}>
+                  0208 857 2000
+                </a>{" "}
+                <br />{" "}
                 <a
                   href="mailto:info@agereversalmedspa.com"
-                  style={{ textDecoration: "none" }}>
+                  style={{ textDecoration: "none", color: "#fff" }}>
                   info@agereversalmedspa.com
                 </a>
               </p>
