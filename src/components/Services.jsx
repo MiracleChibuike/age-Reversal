@@ -200,7 +200,7 @@ const Services = () => {
                     boxShadow: "0px 4px 4px 4px rgba(0, 0, 0, 0.25)",
                     cursor: "pointer",
                   }}>
-                  Faith Cris-Nzurike
+                  Faith Chris-Nzuruike
                 </button>
               </div>
               <div className="aboutTxt" style={{ margin: "8px 0" }}>
