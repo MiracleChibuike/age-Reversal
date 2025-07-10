@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import translate from "../assets/headerImages/translate.svg";
 import user from "../assets/headerImages/user.svg";
 import search from "../assets/headerImages/search.svg";
+import logo from "../assets/logo/logo.png";
 import "./Landing.css";
 import Nav from "./Nav";
 import Hero from "./Hero";
@@ -28,7 +29,7 @@ const Landing = () => {
       <>
         <Helmet>
           <title>Relaxing Spa & Manicure Services | Age Reversal Clinic</title>
-          <link rel="shortcut icon" href={favIcon} type="image/x-icon" />
+          <link rel="shortcut icon" href={logo} type="image/x-icon" />
           <meta
             name="description"
             content="Experience top-rated spa and manicure treatments that leave your skin glowing and your nails flawless. Book your pampering session today at Age Reversal Clinic."
@@ -69,11 +70,14 @@ const Landing = () => {
         {!isLoader && (
           <>
             {/* Home Container */}
-
+          {/* To show only on Desktop */}
+          <div className="logoDisplay">
+            <img src={logo} style={{width: "140px"}} alt="" />
+          </div>
             {/* To show On Mobile Top */}
             <div className="mobileHeader">
               <div className="logo">
-                <h2>Age</h2>
+                <img src={logo} style={{width: "70px"}} alt="" />
               </div>
               <div className="actionsMobile">
                 <img
@@ -92,7 +96,7 @@ const Landing = () => {
               </div>
             </div>
 
-            <div className="landing">
+            <div className="landing" id="land">
               <div className="headerBanner">
                 <div className="headerInfo">
                   <div>Hair • Beauty • Medical</div>
